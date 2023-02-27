@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { getDataForStore } from './api';
 import { isStoreCurrentlyOpen } from './date-utils';
-import { OpeningHours, StoreData } from './types';
+import { OpeningHours } from './types';
 
 type StoreOpenIndicatorProps = {
   storeId: number;
