@@ -4,7 +4,7 @@ Welcome! Your mission is as follows.
 
 ## Assignment
 
-Build a React component that displays whether a specific XXL warehouse store 🏬 is currently ✔️ open or ❌ closed. 
+Build a React component that displays whether a specific XXL warehouse store 🏬 is currently ✔️ open or ❌ closed.
 
 ## Implementation choices are up to you
 
@@ -27,18 +27,17 @@ Navigate to [https://www.xxl.se/store-finder](https://www.xxl.se/store-finder) t
 ## API
 
 The underlying API that is used on this page is
-
-[https://api.xxlsports.com/content-api-v5/datasets/xxl-se/stores/](https://api.xxlsports.com/content-api-v5/datasets/xxl-se/stores/) - go ahead, try a `GET` request in a new browser tab, cURL, Postman or however you wish! (This particular API exposes only public data and hence no API tokens or security is enforced)
+[https://api.xxlsports.com/content-api-v5/datasets/xxl-se/stores/](https://api.xxlsports.com/content-api-v5/datasets/xxl-se/stores/) - go ahead, try a `GET` request in a new browser tab, cURL, Postman or however you wish!
 
 Find your store and note the `id` attribute which you can use to request specifically only the data for a single store, by ending the API URL with that id as the `code` suffix.
 
-![Excerpt from Swagger API docs](https://stackblitz.com/storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBei94QWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--bf1d86ee3d810bd686152a1e09e6531014281b22/swagger.png 'Excerpt from Swagger API docs')
+![Excerpt from Swagger API docs](https://raw.githubusercontent.com/peterskogsberg/fe-test/ac9a835d772f56af321efb0d37ea6d4d37193e6a/img/swagger.png 'Excerpt from Swagger API docs')
 
 The file `example.json` contains one such response example. You may also use this file as a mock or fixture if you like.
 
 ## Hints
 
-To determine whether the store is currently open or closed, you will need to combine the opening hours data from the API with the actual current weekday and time. You are free to use the native [Date API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) or any datetime library you want.
+To determine whether the store is currently open or closed, you will need to combine the opening hours data from the API with the actual current weekday and time 📅⌚. You are free to use the native [Date API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) or any datetime library you want.
 
 In `date-utils.ts`, a function is provided to return the name of the current day in English. This may help to process the data from the API response.
 
