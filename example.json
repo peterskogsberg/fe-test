@@ -1,0 +1,146 @@
+{
+  "ms": 23,
+  "query": "*[_type==\"store\"]{\"filterCode\":id,id,\"name\":displayName,description,googlePlaceId,\"linkButton\":link{displayName,url},contact,location,openingHours[]{day,closed,\"opensAt\":select(!closed=>opensAt),\"closesAt\":select(!closed=>closesAt)},specialOpeningHours[]{date,closed,\"opensAt\":select(!closed=>opensAt),\"closesAt\":select(!closed=>closesAt)},cncOpeningHours[]{day,closed,\"opensAt\":select(!closed=>opensAt),\"closesAt\":select(!closed=>closesAt)},serviceGroups[]->{displayName,categoryCodes,inherit,shortDescription,content->{\"alt\":altText,\"url\":image.asset->url,\"hotspot\":image.hotspot{x,y}},services[]->{displayName,content[]{...select(_type==\"image\"=>@->{\"_type\":\"imageContent\",\"alt\":altText,\"url\":image.asset->url,\"hotspot\":image.hotspot{x,y}},_type==\"video\"=>@->{\"_type\":\"videoContent\",\"url\":video.asset->url,\"mimeType\":video.asset->mimeType},{...})},levels[]{displayName,shortDescription,price,description,featureTitle,features}}},seoSettings,\"lastModified\":_updatedAt}",
+  "result": [
+    {
+      "cncOpeningHours": null,
+      "contact": {
+        "address": "Säljarevägen 10B",
+        "phoneNumber": "010-451 36 00",
+        "postalCode": "702 36",
+        "region": "Örebro"
+      },
+      "description": null,
+      "filterCode": "505",
+      "googlePlaceId": "ChIJXRSm0E4TXEYRTIm1TdEClbw",
+      "id": "505",
+      "lastModified": "2023-02-20T13:01:59Z",
+      "linkButton": {
+        "displayName": "Boka cykelservice här",
+        "url": "https://xxlmarieberg.bestille.no/"
+      },
+      "location": {
+        "latitude": 59.219284,
+        "longitude": 15.14237
+      },
+      "name": "Örebro, Marieberg",
+      "openingHours": [
+        {
+          "closed": false,
+          "closesAt": "20:00",
+          "day": "Monday",
+          "opensAt": "10:00"
+        },
+        {
+          "closed": false,
+          "closesAt": "20:00",
+          "day": "Tuesday",
+          "opensAt": "10:00"
+        },
+        {
+          "closed": false,
+          "closesAt": "20:00",
+          "day": "Wednesday",
+          "opensAt": "10:00"
+        },
+        {
+          "closed": false,
+          "closesAt": "20:00",
+          "day": "Thursday",
+          "opensAt": "10:00"
+        },
+        {
+          "closed": false,
+          "closesAt": "20:00",
+          "day": "Friday",
+          "opensAt": "10:00"
+        },
+        {
+          "closed": false,
+          "closesAt": "18:00",
+          "day": "Saturday",
+          "opensAt": "10:00"
+        },
+        {
+          "closed": false,
+          "closesAt": "18:00",
+          "day": "Sunday",
+          "opensAt": "11:00"
+        }
+      ],
+      "seoSettings": {
+        "seoCity": "orebro",
+        "seoLocation": "marieberg"
+      },
+      "serviceGroups": null,
+      "specialOpeningHours": [
+        {
+          "closed": false,
+          "closesAt": "18:00",
+          "date": "2023-04-07",
+          "opensAt": "11:00"
+        },
+        {
+          "closed": false,
+          "closesAt": "18:00",
+          "date": "2023-04-08",
+          "opensAt": "10:00"
+        },
+        {
+          "closed": false,
+          "closesAt": "18:00",
+          "date": "2023-04-09",
+          "opensAt": "11:00"
+        },
+        {
+          "closed": false,
+          "closesAt": "18:00",
+          "date": "2023-04-10",
+          "opensAt": "11:00"
+        },
+        {
+          "closed": false,
+          "closesAt": "18:00",
+          "date": "2023-04-30",
+          "opensAt": "11:00"
+        },
+        {
+          "closed": false,
+          "closesAt": "18:00",
+          "date": "2023-05-01",
+          "opensAt": "11:00"
+        },
+        {
+          "closed": false,
+          "closesAt": "18:00",
+          "date": "2023-05-18",
+          "opensAt": "11:00"
+        },
+        {
+          "closed": false,
+          "closesAt": "18:00",
+          "date": "2023-06-06",
+          "opensAt": "11:00"
+        },
+        {
+          "closed": false,
+          "closesAt": "14:00",
+          "date": "2023-06-23",
+          "opensAt": "10:00"
+        },
+        {
+          "closed": true,
+          "closesAt": null,
+          "date": "2023-06-24",
+          "opensAt": null
+        },
+        {
+          "closed": false,
+          "closesAt": "18:00",
+          "date": "2023-06-25",
+          "opensAt": "10:00"
+        }
+      ]
+    }
+  ]
+}
