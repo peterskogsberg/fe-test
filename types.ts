@@ -15,12 +15,14 @@ type OpeningHours = {
   opensAt: string;
 };
 
-type StoreData = {
-  result: {
-    id: string;
-    name: string;
-    openingHours: OpeningHours[];
-  };
+type StoreDataResult = {
+  id: string;
+  name: string;
+  openingHours: OpeningHours[];
 };
 
-export { StoreData };
+type StoreData = {
+  result: StoreDataResult[];
+};
+
+export { Day, OpeningHours, StoreData };
