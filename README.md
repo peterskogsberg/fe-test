@@ -8,9 +8,9 @@ Build a React component that displays whether a specific XXL warehouse store �
 
 ## Implementation choices are up to you
 
-You are free to choose whether to work in a local IDE or an online based one, whether you want to use TypeScript or JavaScript, and how the component will look. A mockup is provided as an example.
+You are free to choose whether to work in a local IDE or an online based one, whether you want to use TypeScript or JavaScript, and how the component will look. SVG icons are provided if you want to use them.
 
-You can also fetch data any way you want, e.g. fetch, Axios, react-query or even XMLHttpRequest...
+You can also fetch data any way you want, e.g. fetch, Axios, react-query or even XMLHttpRequest. The same goes for app-internal data management - React context, Redux, a hook, useState?
 
 ## Keep calm and code on 👌
 
@@ -47,15 +47,19 @@ If you choose to code in TypeScript, you can refer to `types.ts` for a simplifie
 
 Import your React component from `App.tsx` and make sure it renders to clearly indicate whether the store is currently open or closed.
 
-Example
+### Example
 
-```tsx
+```jsx
 <StoreOpenIndicator storeId={1337} />
 ```
 
 ## Bonus
 
 If you have time remaining, consider improving the layout 💅, writing unit tests 🧪, adding a link to the store URL or a map 🗺️ using the latitude/longitude, or any other idea you may have.
+
+## Attribution
+
+SVG icons from [Icons8](https://icons8.com/license)
 
 ## Contact
 
